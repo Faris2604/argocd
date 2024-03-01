@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: firstpod
+  namespace: argocd
   labels:
     app: faris
 spec:
@@ -16,6 +17,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
+  namespace: argocd
 spec:
   selector:
     app: faris
